@@ -6,21 +6,20 @@ The project transforms nested GA4 event data into analytical datasets using a la
 
 ## Architecture
 
-GA4 Events<br>
-↓<br>
-Exploration<br>
-↓<br>
-Silver: Purchase Items<br>
-↓<br>
-Gold: Daily Sales<br>
-↓<br>
-Gold: Category Sales<br>
-↓<br>
-Gold: Daily Insights<br>
-↓<br>
-Gold: Category Revenue Drivers<br>
-↓<br>
-Automated Insights *(planned)*
+```mermaid
+flowchart TD
+    A[GA4 Events] --> B[Exploration]
+    B --> C[Silver: Purchase Items]
+
+    C --> D[Gold: Daily Sales]
+    C --> E[Gold: Category Sales]
+
+    D --> F[Gold: Daily Insights]
+    E --> G[Gold: Category Insights]
+
+    F --> H[Automated Insights - Planned]
+    G --> H
+```
 
 ## Dataset
 
