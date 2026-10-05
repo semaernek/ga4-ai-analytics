@@ -151,6 +151,14 @@ The project separates deterministic analytics from future AI-generated interpret
 
 This separation keeps business-critical calculations deterministic and reproducible.
 
+## Tools & Technologies
+
+* **Google BigQuery:**  Data storage and analytical SQL
+* **SQL:** Data transformation, data modeling, and business analytics
+* **Visual Studio Code:** SQL development and project organization
+* **Git & GitHub:** Version control and project documentation
+
+
 ## Project Structure
 
 ```text
@@ -172,3 +180,4 @@ ga4-ai-analytics/
         ├── 02_gold_daily_category_sales.sql
         ├── 03_gold_daily_sales_insights.sql
         └── 04_gold_daily_category_insights.sql
+
